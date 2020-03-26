@@ -28,6 +28,13 @@ public class FietsEndpoints {
         return this.fietsService.save(fiets);
     }
 
+    @PutMapping("/{fietsId")
+    public Fiets updateFiets(@RequestParam Long fietsId,
+                             @RequestBody Fiets fiets) {
+        fiets.setFietsId(fietsId);
+        return this.fietsService.save(fiets);
+    }
+
     @DeleteMapping("/{fietsId}")
     public void deleteFiets(@PathVariable Long fietsId) {
         this.fietsService.deleteById(fietsId);
