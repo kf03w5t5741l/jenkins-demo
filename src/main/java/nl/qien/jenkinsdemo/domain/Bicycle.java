@@ -6,21 +6,21 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Fiets {
+public class Bicycle {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long fietsId;
+    private Long bicycleId;
 
     private String manufacturer;
     private String model;
     private int serialNumber;
 
-    public Long getFietsId() {
-        return fietsId;
+    public Long getBicycleId() {
+        return bicycleId;
     }
 
-    public void setFietsId(Long fietsId) {
-        this.fietsId = fietsId;
+    public void setBicycleId(Long bicycleId) {
+        this.bicycleId = bicycleId;
     }
 
     public String getManufacturer() {
