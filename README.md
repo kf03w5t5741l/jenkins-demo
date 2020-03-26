@@ -59,7 +59,11 @@ Select `Create new item` from the left-hand menu of the Jenkins dashboard, enter
 ### Jenkins source code management steps
 Under the header `Source Code Management`, enter the URL of your git repository. Decide if you would like to deploy from `master` or other branches in your repo.
 
+### Jenkins build triggers
+Check `Build whenever a SNAPSHOT dependency is built`.
 
+Check `Poll SCM` and enter `* * * * *` under `Schedule`. This tells Jenkins to check for updates to the chosen git branch(es) every minute.
+You can find out more about scheduling tasks at specific time intervals in the documentation for the Linux `cron` system. 
 
 ### Jenkins pre-build  steps
 Add the following shell command as a pre-build step:
