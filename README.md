@@ -56,12 +56,12 @@ For this method of deployment to work, Jenkins should have the `Git` plugin inst
 
 Select `Create new item` from the left-hand menu of the Jenkins dashboard, enter your application name and select `Maven project` to continue.
 
-## Jenkins source code management steps
+### Jenkins source code management steps
 Under the header `Source Code Management`, enter the URL of your git repository. Decide if you would like to deploy from `master` or other branches in your repo.
 
 
 
-## Jenkins pre-build  steps
+### Jenkins pre-build  steps
 Add the following shell command as a pre-build step:
 ```
 echo "spring:
@@ -79,10 +79,10 @@ server:
   cp $WORKSPACE/src/main/resources/application-prod.yml $WORKSPACE/src/main/resources/application.yml
 ```
 
-## Jenkins build steps:
+### Jenkins build steps
 Add `package` to the `Goals and Options` field.
 
-## Jenkins post-build steps:
+### Jenkins post-build steps
 Add the following shell command as a post-build step:
 ```
 cp target/[APPLICATION_NAME_STUB]*.jar /apps/[APPLICATION_NAME].jar
