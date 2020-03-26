@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-@RequestMapping("/api/fiets")
+@RequestMapping("/api/fietsen")
 @RestController
 public class FietsEndpoints {
     @Autowired
