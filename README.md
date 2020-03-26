@@ -14,7 +14,7 @@ LOG_FILE=/tmp/[APPLICATION_NAME].log
 case $1 in
     start)
         echo "Starting $SERVICE_NAME ..."
-        if [ ! -f $PID_PATH_NAME ]; then
+        if [ ! -f $PID_PATH_NAME ]; then                    # Ignore the square brackets in this line
             nohup java -Dspring.profiles.active=prod -jar $PATH_TO_JAR /tmp 2>> $LOG_FILE >> $LOG_FILE &
                         echo $! > $PID_PATH_NAME
             echo "$SERVICE_NAME started ..."
@@ -23,7 +23,7 @@ case $1 in
         fi
     ;;
     stop)
-        if [ -f $PID_PATH_NAME ]; then
+        if [ -f $PID_PATH_NAME ]; then                      # Ignore the square brackets in this line
             PID=$(cat $PID_PATH_NAME);
             echo "$SERVICE_NAME stoping ..."
             kill $PID;
@@ -34,7 +34,7 @@ case $1 in
         fi
     ;;
     restart)
-        if [ -f $PID_PATH_NAME ]; then
+        if [ -f $PID_PATH_NAME ]; then                      # Ignore the square brackets in this line
             PID=$(cat $PID_PATH_NAME);
             echo "$SERVICE_NAME stopping ...";
             kill $PID;
