@@ -49,7 +49,7 @@ case $1 in
     ;;
 esac
 ```
-Do not forget to run `chmod +x [APPLICATION_NAME].sh` to grant execution privileges.
+Remember to run `chmod +x [APPLICATION_NAME].sh` to grant execution privileges.
 
 ## Jenkins basics for maven-based deployments via Git
 For this method of deployment to work, Jenkins should have the `Git` plugin installed.
