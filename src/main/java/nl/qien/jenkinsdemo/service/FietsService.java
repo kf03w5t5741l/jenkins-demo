@@ -1,6 +1,7 @@
 package nl.qien.jenkinsdemo.service;
 
 import nl.qien.jenkinsdemo.domain.Fiets;
+import nl.qien.jenkinsdemo.repository.FietsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

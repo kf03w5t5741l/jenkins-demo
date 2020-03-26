@@ -1,4 +1,4 @@
-package nl.qien.jenkinsdemo.service;
+package nl.qien.jenkinsdemo.repository;
 
 import nl.qien.jenkinsdemo.domain.Fiets;
 import org.springframework.data.repository.CrudRepository;
