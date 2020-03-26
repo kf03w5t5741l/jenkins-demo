@@ -1,5 +1,5 @@
 # Jenkins continuous deployment demo with Spring Boot
-This is a demo application to show how to set up continuous deployment via Jenkins for a Spring Boot application. All values in square brackets below are placeholder values that should be replaced by the user.
+This is a demo application to show how to set up continuous deployment for a Spring Boot application via Jenkins. All values in square brackets below are placeholder values that should be replaced by the user.
 
 This setup requires the manual creation of a database and database user on the application server.
 
